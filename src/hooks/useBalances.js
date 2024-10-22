@@ -38,9 +38,9 @@ const useBalances = () => {
 
       const url = 'https://yacasidonaciones.com/.netlify/functions/donorsupport';
 
-      //const start = new Date(2024, 8, 16);
-      //start.setHours(0, 0, 0, 0);
-      //const fromTimestamp = start.getTime();
+      // const start = new Date(2024, 8, 16);
+      // start.setHours(0, 0, 0, 0);
+      // const fromTimestamp = start.getTime();
 
       try {
         if (typeof window !== 'undefined') {
