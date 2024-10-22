@@ -13,13 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Create .env file
+        run: |
+          echo "GATSBY_ETHERSCAN_API_KEY=${{ secrets.ETHERSCAN_API_KEY }}" >> .env
+          echo "GATSBY_TRON_PRO_API_KEY=${{ secrets.TRON_PRO_API_KEY }}" >> .env
+
       - name: Build
         run: |
           npm install
           npm run build -- --prefix-paths
-        env:
-          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
-          TRON_PRO_API_KEY: ${{ secrets.TRON_PRO_API_KEY }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

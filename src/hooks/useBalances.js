@@ -33,8 +33,8 @@ const useBalances = () => {
       const usdcContract = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eb48';
       const usdtAddress = 'TEf3uQxCRwnSK131nfGF7bJgW8pzcR4UU1';
 
-      const etherscanApiKey = process.env.ETHERSCAN_API_KEY;
-      const tronscanApiKey = process.env.TRON_PRO_API_KEY;
+      const etherscanApiKey = process.env.GATSBY_ETHERSCAN_API_KEY;
+      const tronscanApiKey = process.env.GATSBY_TRON_PRO_API_KEY;
 
       const url = 'https://yacasidonaciones.com/.netlify/functions/donorsupport';
 
