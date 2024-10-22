@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&family=Roboto+Mono&display=swap');
+
+/* src/index.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primario: #1E90FF; /* Azul Dodger */
+  --color-secundario: #FFD700; /* Oro */
+  --color-fondo-principal: #121212; /* Fondo Principal Oscuro */
+  --color-fondo-tarjetas: rgba(30, 144, 255, 0.1); /* Fondo de Tarjetas Transparente */
+  --color-texto-principal: #FFFFFF; /* Blanco */
+  --color-texto-secundario: #CCCCCC; /* Gris Claro */
+  --color-borde: #333333; /* Gris Oscuro */
+  --color-hover: #FF4500; /* Naranja Rojo */
+}
+
+/* Uso de Variables en Estilos Globales */
+body {
+  background-color: var(--color-fondo-principal);
+  color: var(--color-texto-principal);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-texto-principal);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-texto-secundario);
+}
+
+/* Estilos para Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-primario);
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
