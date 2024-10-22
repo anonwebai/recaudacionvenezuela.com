@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: |
           npm install
-          npm run-script build
+          npm run build
         env:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
           TRON_PRO_API_KEY: ${{ secrets.TRON_PRO_API_KEY }}
